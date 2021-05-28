@@ -56,6 +56,27 @@ Write each of the following in $y = a(x-h)^2 + k$ and $y = ax^2 + bx + c$ form.
 \end{enumerate} \setcounter{Review}{\value{enumi}}
 \end{multicols}
 
+\begin{multicols}{2}
+\begin{enumerate}	\setcounter{enumi}{\value{Review}}
+\item \mbox{} \newline\\
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}
+[axis lines = middle, xmin=-5.5, xmax=5.5, ymin=-5.5, ymax=5.5, xtick={-5,-4,...,5}, ytick={-5,-4,...,5}, grid]
+\addplot[<->, very thick, domain=-3.5:1.5, blue] {(x+1)^2-2};
+\addplot[blue, mark=*, only marks] coordinates {(-3,2) (1,2)};
+\end{axis}
+\end{tikzpicture}
+\item \mbox{} \newline\\
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}
+[axis lines = middle, xmin=-2.5, xmax=6.5, ymin=-5.5, ymax=5.5, xtick={-2,-1,...,6}, ytick={-5,-4,...,5}, grid]
+\addplot[<->, very thick, domain=1:5, blue] {-2*(x-3)^2+4};
+\addplot[blue, mark=*, only marks] coordinates {(2,2) (4,2)};
+\end{axis}
+\end{tikzpicture}
+\end{enumerate}	\setcounter{Review}{\value{enumi}}
+\end{multicols}
+
 \newpage
 
 
@@ -72,4 +93,6 @@ Write each of the following in $y = a(x-h)^2 + k$ and $y = ax^2 + bx + c$ form.
     
     \item $y = -\frac{1}{2}(x-2)^2+1 = -\frac{1}{2}x^2+2x-1$
     \item $y = 4(x+3)^2-4 = 4x^2+24x+32$
+    \item $y =(x+1)^2-2 = x^2 + 2x - 1$
+    \item $y = -2(x-3)^2 + 4 = -2x^2 + 12x - 14$
 \end{enumerate}
